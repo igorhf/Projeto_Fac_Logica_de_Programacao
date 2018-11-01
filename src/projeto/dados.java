@@ -239,7 +239,35 @@ public class dados {
             }
     }
     public void matriz(){
-    
+                int op = 0;
+                int[][] array = new int[3][3];
+                int respost;
+              
+                while(op != 9){
+                System.out.println("matriz (3x3), de valores inteiros em que os valores"
+                        + " da diagonal principal sejam um número informado pelo"
+                        + " usuário e os demais sejam zero");
+                System.out.print("informe um valor para matriz: ");
+                respost = leia.nextInt();
+                System.out.println();
+                for(int coluna=0;coluna<array.length;coluna++){
+                    for(int linha=0;linha<array.length;linha++){
+                        if(linha==coluna){
+                        array[coluna][linha] = respost;
+                        }else{
+                            array[coluna][linha]=0;
+                        }
+                    }
+                }
+                for(int coluna=0;coluna<array.length;coluna++){
+                    for(int linha=0;linha<array.length;linha++){
+                        System.out.print(array[coluna][linha]+"");
+                    }
+                    System.out.println();
+                }    
+                System.out.println("digite 9º para sair, se não digite qualquer outro numero");
+                op = leia.nextInt();
+                }
     }
     //##########################################################################
 }
