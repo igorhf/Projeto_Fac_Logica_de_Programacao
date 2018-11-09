@@ -133,31 +133,40 @@ public class dados {
     }
     public void media(){
                 int op = 0;
-                float nota1,nota2,media;
+                double nota1,nota2,media;
                 while(op != 9){ 
-                System.out.println("Calcular a Media"); 
-                
+                System.out.println("----Calcular a Media----");
+                System.out.println("------------------------");
+                System.out.println("se informa nota menor que 0 a nota se igual a 0,\n se for maior que 10 a nota sera igual a 10");
+                System.out.println("------------------------");
+                System.out.println("informe uma nota de 0 a 10"); 
                 System.out.println("Informe sua primeira nota");
-                nota1 = leia.nextFloat();
-                
+                nota1 = leia.nextDouble();
+                System.out.println("informe uma nota de 0 a 10");
                 System.out.println("Informe a segunda nota");
-                nota2 = leia.nextFloat();
+                nota2 = leia.nextDouble();
                 if(nota1 > 10){
                     nota1 = 10;
                 }
                 if(nota2 > 10){
                     nota2 = 10;
                 }
+                if(nota1 < 0){
+                    nota1 = 0;
+                }
+                if(nota2 < 0){
+                    nota2 = 0;
+                }
                 media = (nota1 + nota2) /2;
                 
                 if(media <3){
-                System.out.println("reprovado "+"sua media é: "+ media);
+                System.out.println("reprovado, "+"sua media é: "+ media);
                 }
                 else if(media >=7){
-                System.out.println("aprovado "+"sua media é: "+ media);
+                System.out.println("aprovado, "+"sua media é: "+ media);
                 }
                 else if(media <7 && media >=3){
-                System.out.println("final "+"sua media é: "+ media);
+                System.out.println("final, "+"sua media é: "+ media);
                 }
                 System.out.println("Se deseja sair digite 9 se não qualquer outro numero");
                 op = leia.nextInt();

@@ -9,15 +9,15 @@ public class Projeto extends dados {
        
         int opc = 0;          
         while(opc != 9){
-        System.out.println("MENU");
+        System.out.println("------MENU------");
         System.out.println("................");
-        System.out.println("Escola uma opção");
+        System.out.println("Escolha uma opção");
         System.out.println("1: Calculadora");
         System.out.println("2: Cálculo do IMC");
         System.out.println("3: Média");
         System.out.println("4: Desconto");
         System.out.println("5: Matriz");
-        System.out.println("Digite 9º para Sair, se não digite qualquer outro numero");
+        System.out.println("6: Digite 9º para Sair, se não digite qualquer outro numero");
         System.out.println("................");
         opc = leia.nextInt();
         
